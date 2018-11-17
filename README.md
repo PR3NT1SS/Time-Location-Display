@@ -1,4 +1,4 @@
-# Clock-Location-Display
+# Time-Location-Display
 This simple script will add a time display and player's location.
 Installation:
 This is a very simple script to install to your server. Just follow a few steps:
