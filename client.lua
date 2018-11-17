@@ -43,6 +43,8 @@ Citizen.CreateThread(function()
                 if(zones_ru[GetNameOfZone(pos.x, pos.y, pos.z)] and tostring(GetStreetNameFromHashKey(var1)))then
                     drawTxt2(0.015, 0.745, 1.0,1.0,0.4, zones_ru[GetNameOfZone(pos.x, pos.y, pos.z)], 255, 255, 255, 255)
                 end
+            else
+                print("Invalid language specified in client.lua:6! Select either 'ru' or 'en'.")
             end
 		end
 	end
@@ -110,24 +112,32 @@ function getCardinalDirectionFromHeading(heading)
             return "N" -- North
         elseif lang == 'ru' then
             return "С" -- North
+        else
+            return "~r~Err"
         end
     elseif (heading >= 45 and heading < 135) then
         if lang == 'en' then
             return "E" -- East
         elseif lang == 'ru' then
             return "В" -- East
+        else
+            return "~r~Err"
         end
     elseif (heading >=135 and heading < 225) then
         if lang == 'en' then
             return "S" -- South
         elseif lang == 'ru' then
             return "Ю" -- South
+        else
+            return "~r~Err"
         end
     elseif (heading >= 225 and heading < 315) then
         if lang == 'ru' then
             return "W" -- West
         elseif lang == 'ru' then
             return "З" -- West
+        else
+            return "~r~Err"
         end
     end
 end
