@@ -106,13 +106,29 @@ end)
 -- Thanks @marxy
 function getCardinalDirectionFromHeading(heading)
     if ((heading >= 0 and heading < 45) or (heading >= 315 and heading < 360)) then
-        return "N" -- North
+        if lang == 'en' then
+            return "N" -- North
+        elseif lang == 'ru' then
+            return "С" -- North
+        end
     elseif (heading >= 45 and heading < 135) then
-        return "E" -- East
+        if lang == 'en' then
+            return "E" -- East
+        elseif lang == 'ru' then
+            return "В" -- East
+        end
     elseif (heading >=135 and heading < 225) then
-        return "S" -- South
+        if lang == 'en' then
+            return "S" -- South
+        elseif lang == 'ru' then
+            return "Ю" -- South
+        end
     elseif (heading >= 225 and heading < 315) then
-        return "W" -- West
+        if lang == 'ru' then
+            return "W" -- West
+        elseif lang == 'ru' then
+            return "З" -- West
+        end
     end
 end
 
