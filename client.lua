@@ -134,7 +134,7 @@ function getCardinalDirectionFromHeading(heading)
             return "~r~Err"
         end
     elseif (heading >= 225 and heading < 315) then
-        if lang == 'ru' then
+        if lang == 'en' then
             return "W" -- West
         elseif lang == 'ru' then
             return "З" -- West
