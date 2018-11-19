@@ -11,3 +11,5 @@ Step #3. Add it into your server.cfg file
 
 Step #4. Restart your server.
 That's all.
+
+P.S. Don't forget to choose language option
