@@ -3,6 +3,8 @@ local showCompass = true
 local displayTime = true
 local useMilitaryTime = true
 
+-- en for english translate
+-- ru for russian translate
 local lang = 'en' 
 
 local timeAndDateString = nil
